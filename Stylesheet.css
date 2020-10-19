@@ -1,7 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box; 
+    box-sizing: content-box;
+    position: relative; 
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -187,8 +188,8 @@ padding-right: 20px;
         bottom: 5%;
         right: 50%;
         width: 50%;
-        transform: translate(50%, 5%);
-        height: 6%;
+        transform: translate(60%, 9%);
+        height: 5%;
     }
     .cover img {
         height: 75%;
@@ -197,14 +198,42 @@ padding-right: 20px;
         padding-bottom: 10px;
     }
     .Plane{
-        bottom: 8%;
-        right: 0%;
+        bottom: 6%;
+        left: 99%;
         width: 50%;
+        padding-right: 10000cm;
         transform: translate(8%, 5%);
-        height: 60%;
+        height: 10%;
     }
-    
+    .circle{
+        position: sticky;
+        border-radius: 50%;
+        background: #0b011b;
+        animation: ripple 15s forwards;
+        box-shadow: 0px 0px 1px 0px #50cce2;
+        z-index: -2;
+    }
+    .intro-text p:hover{
+        color: deepskyblue;
+        background-color: transparent;
+        border-radius: 7px;
+    }
+    .nav-links{
+        justify-content: space-around;
+        list-style: none;
+        height: 20%;
+    }
+    .cart {
+        flex: 1;
+        justify-content: flex-end;
+        padding-right: 30px;
+        }
+    .logo-container {
+        height: 60%;
+        padding-left: 10px;
+    }
 }
+
   .circle{
     position: fixed;
     border-radius: 50%;
